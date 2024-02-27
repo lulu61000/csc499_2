@@ -1,0 +1,37 @@
+{
+	"name": "erie-svelte",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
+	},
+	"devDependencies": {
+		"svelte-check": "^3.6.0",
+		"typescript": "^5.0.0",
+		"@fontsource/fira-mono": "^4.5.10",
+		"@neoconfetti/svelte": "^1.0.0",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"svelte": "^4.2.7",
+		"vite": "^5.0.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"arquero": "^5.4.0",
+		"d3": "^7.8.5",
+		"erie-web": "^0.1.12",
+		"katex": "^0.16.9",
+		"moment": "^2.30.1",
+		"monaco-editor": "^0.45.0",
+		"svelte-vega": "^2.1.0",
+		"vega": "^5.27.0",
+		"vega-embed": "^6.24.0",
+		"vega-lite": "^5.16.3"
+	}
+}
