@@ -3,10 +3,8 @@ import { isArrayOf, isInstanceOf } from "./erie-util";
 
 
 
-export class ToneSpeech {
-  constructor(text, pitch, loudness, duration, completion_rate, Domestically_timber, Speed) {
-    this._text = 'default';
-    this._continued = false;
+export class SpeechTone {
+  constructor(text, pitch, loudness, duration, Domestically_timber, Speed) {
     if (text) this.set(text);
     else this.set("default")
     if (pitch) this._pitch = pitch;
@@ -15,8 +13,6 @@ export class ToneSpeech {
     else this._loudness = 1;//0 to 1
     if (duration) this._duration = duration;
     else this._duration = 100;//ms
-    if (completion_rate) this._completion_rate = completion_rate;
-    else this._completion_rate = 100;//%
     if (Domestically_timber) this._Domestically_timber = Domestically_timber;
     else this._Domestically_timber = 100;//50 for natural, 100 for male, 0 for female
     if (Speed) this._Speed = Speed;
